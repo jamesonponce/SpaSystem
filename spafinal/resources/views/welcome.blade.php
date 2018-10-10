@@ -12,16 +12,28 @@
 </head>
 <body background="image/wood.jpg">
     <!--nav-->
+    @if (Route::has('login'))
     <nav class="stroke">
         <div class="nav">
             <div class="nav-header">
                 <ul>
-                    <li><img src="image/logo.png" style="width: 190px; height: 53px; padding-left: 40px; bottom: 10%;">
-                    </li>
+                    <li><img src="image/logo.png" style="width: 190px; height: 53px; padding-left: 40px; bottom: 10%;"> </li>
+                    @auth
                     <li><a href="#home">HOME</a></li>
+                    @else
                     <li><a href="#service">SERVICE</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="login.html">LOGIN</a></li>
+                    
+                    <li><a href="{[ route('login') }}">LOGIN</a></li>
+                    
+                    @if (Route::has('register'))
+                    <li><a href="{[ route('register') }}">REGISTER</a></li>
+                    @endif
+                    
+                    @endauth
+                    
+                    @endif
+                    
                 </ul>
 
             </div>
