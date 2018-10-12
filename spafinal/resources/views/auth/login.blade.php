@@ -19,12 +19,12 @@
                 <ul>
                     <li><img src="image/logo.png" style="width: 190px; height: 53px; padding-left: 40px; bottom: 10%;">
                     </li>
-                    <li><a href=>HOME</a></li>
+                    <li> <a href=href="{{ url('/welcome') }}">Home</a></li>
                     <li><a href="#service">SERVICE</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#login">LOGIN</a></li>
-                    <li><a href="#register">REGISTER</a></li>
-                </ul>
+                    <li><a href="{{ route('login') }}">LOGIN</a></li>
+                    <li><a href="{{ route('register') }}">REGISTER</a></li>
+                </ul
 
             </div>
         </div>
@@ -37,7 +37,7 @@
             <input type="text" name="" placeholder="Enter Username"style ="width: 245px; height: 40px;">
             <p>Password</p>
             <input type="password" name="" placeholder="Enter Password"style ="width: 245px; height: 40px;"><br>
-            <button class="button" style="vertical-align:middle; width: 245px"><span>Login</span></button><br>
+            <button class="button" style="vertical-align:middle; width: 245px"><span><a href="{{ url('/home') }}">Login</span></button><br>
             <a href="#">Lost your password?</a><br>
             <a href="#">Don't have a account?</a>
         
