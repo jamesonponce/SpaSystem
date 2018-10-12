@@ -70,7 +70,7 @@ nav ul li a:hover {
 .video-section {
   position: relative;
   width: 100%;
-  max-height: 610px;
+  max-height: 680px;
   overflow: hidden;
 }
 
@@ -428,8 +428,8 @@ span.psw {
 .loginbox{
     width: 320px;
     height: 420px; 
-    background: #000;
-    color: #fff;
+    background: #edf0c7;
+    color: #ff5c00;
     top: 0%;
     left: 50%;
     position: absolute;
@@ -438,16 +438,6 @@ span.psw {
     padding: 70px 30px;
         
 }
-
-.avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -30px;
-    left: calc(50% - 50px);
-}
-
 
 .loginbox p{
     margin: 0;
@@ -467,7 +457,7 @@ span.psw {
     background: transparent;
     outline: none;
     height: 40px;
-    color: #fff;
+    color: black;
     font-size: 16px;
 }
 
@@ -497,6 +487,76 @@ span.psw {
 }
 
 .loginbox a:hover
+{
+    color: #ff5c00;
+}
+
+
+/*loginboxx*/
+.loginboxx{
+    width: 320px;
+    height: 500px; 
+    background: #edf0c7;
+    color: #ff5c00;
+    top: 0%;
+    left: 50%;
+    
+    position: absolute;
+    transform: translate(-50%, 50%);
+    box-sizing: border-box;
+    padding: 60px 30px;
+   
+        
+}
+
+.loginboxx p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginboxx input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginboxx input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.loginboxx input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #edf0c7;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px; 
+}
+
+.loginboxx input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.loginboxx a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginboxx a:hover
 {
     color: #ff5c00;
 }

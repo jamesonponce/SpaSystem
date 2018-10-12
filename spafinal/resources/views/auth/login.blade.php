@@ -31,7 +31,7 @@
     </nav>
     
     <div class="loginbox">
-        <img src="image/avatar.png" class="avatar">
+        
         <form>
         <p>Username</p>
             <input type="text" name="" placeholder="Enter Username"style ="width: 245px; height: 40px;">
@@ -42,7 +42,7 @@
         </form>
     </div>
   
-    <div style="padding-top: 600px;"></div>
+    <div style="padding-top: 700px;"></div>
      <div style="background-color: #edf0c7; height: 230px;">
     <div class="foooterz"> 
         <div></div>
