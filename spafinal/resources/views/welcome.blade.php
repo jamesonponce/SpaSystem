@@ -24,13 +24,15 @@
                     <li><a href="#about">ABOUT</a></li>
                     @if (Route::has('login'))
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                       <li> <a href="{{ url('/home') }}">Home</a></li>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                       <li> <a href="{{ route('login') }}">Login</a></li>
+                      @endif
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <li><a href="{{ route('register') }}">Register</a></li>
                         @endif
+                        
                     @endauth
                 </div>
                     
