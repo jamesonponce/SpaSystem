@@ -17,7 +17,7 @@
         <div class="nav">
             <div class="nav-header">
                 <ul>
-                    <li><img src="image/logo.png" style="width: 190px; height: 53px; padding-left: 40px; bottom: 10%;">
+                    <li><img src="image/logo.png" style="width: 190px; height: 56px; padding-left: 40px; bottom: 10%;">
                     </li>
                     <li><a href=>HOME</a></li>
                     <li><a href="#service">SERVICE</a></li>
@@ -38,7 +38,6 @@
             <p>Password</p>
             <input type="password" name="" placeholder="Enter Password"style ="width: 245px; height: 40px;"><br>
             <button class="button" style="vertical-align:middle; width: 245px"><span>Login</span></button><br>
-            <a href="#">Lost your password?</a><br>
             <a href="#">Don't have a account?</a>
         
             
