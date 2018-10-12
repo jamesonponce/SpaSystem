@@ -1,79 +1,77 @@
 @extends('layouts.app')
 
 @section('content')
-<head>
-    <title>LykaRe of Wellness Center</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
-    
-</head>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Register') }}</div>
 
-<body style="background-image: url(image/wood.jpg); background-size: cover;">
-    <!--nav-->
-    <nav class="stroke">
-        <div class="nav">
-            <div class="nav-header">
-                <ul>
-                    <li><img src="image/logo.png" style="width: 190px; height: 56px; padding-left: 40px; bottom: 10%;">
-                    </li>
-                    <li> <a href="{{ url('/welcome') }}">Home</a></li>
-                    <li><a href="#service">SERVICE</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="{{ route('login') }}">LOGIN</a></li>
-                    <li><a href="{{ route('register') }}">REGISTER</a></li>
-                </ul>
+                <div class="card-body">
+                    <form method="POST" action="{{ route('register') }}">
+                        @csrf
 
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+
+                                @if ($errors->has('name'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+
+                                @if ($errors->has('email'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Register') }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </nav>
-     
-    
-    
-    <div class="loginboxx">
-        <form>
-            <p>Name</p>
-            <input type="text" name="" placeholder="Enter Name"style ="width: 245px; height: 40px;">
-            <p>Password</p>
-            <input type="password" name="" placeholder="Enter Password"style ="width: 245px; height: 40px;"><br>
-            <p>Confirm Password</p>
-            <input type="password" name="" placeholder="Enter Confirm Password"style ="width: 245px; height: 40px;"><br>
-            <p>Email Address</p>
-            <input type="text" name="" placeholder="Enter Email Address"style ="width: 245px; height: 40px;"><br>
-            <button class="button" style="vertical-align:middle; width: 245px"><span><a href="{{ url('/home') }}">Login</a></span></button>
-            
-        </form>
     </div>
-    <br><br>
-    
-    
-    <div style="padding-top: 700px;"></div>
-    <div style="background-color: #edf0c7; height: 230px;">
-    <div class="foooterz"> 
-        <div></div>
-        <div> <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: #ff5c00; font-size: 25px; padding-top: 35px; padding-left: 65px;">Location</div>
-        <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: #ff5c00; font-size: 25px; padding-left: 65px;"> LykaRe Wellness Center</div>
-        
-        <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: black; font-size: 19px; padding-left: 65px;">
-            Alabang, Muntinlupa City, Philippines
-            Email us: alabang@lykarewellnesscenter.com</div> </div>
-         
-        <div> <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: #ff5c00; font-size: 25px; padding-top: 35px; padding-left: 85px;"> To promote your products in lykarewellnesscenter.com's site, please contact our sales group: </div>
-            <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: black; font-size: 19px; padding-left: 85px;"> Phone: +63 (2) 369-2359 / 7895314
-Fax: +63 (2) 771-0143
-E-mail address: alabang@lykarewellnesscenter.com</div> 
-            </div>
-        <div> <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: #ff5c00; font-size: 25px; padding-top: 35px; padding-left: 75px;"> For event sponsorships: </div>
-            <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: black; font-size: 19px; padding-left: 75px;"> Please send proposals to alabang@lykarewellnesscenter.com</div>      
-        </div>
-        </div>
-    </div>
-    
-    <div class="footer" style=" position: relative; left: 0;  bottom: 0;  height: 40px;  width: 100%; background-color: #1b1b1c; color: white; text-align: center; padding-top: 10px;">  Copyright © 2018 LykaReWellnessCenter.com | About Us | Terms of Use | Email Us | FAQs </div>
-   
-    </body>
-    
+</div>
 @endsection
