@@ -75,7 +75,9 @@ nav ul li a:hover {
 }
 
 #video-elem {
-  width: 100%;
+    height: 200%;
+    width: 150%;
+    
 }
 
 video::-webkit-media-controls {

@@ -34,18 +34,16 @@
                         @endif
                         
                     @endauth
-                </div>
-                    
                 </ul>
-
             </div>
         </div>
+
      
     </nav>
     <!--videosection-->
     <div class="video-section">
-      <video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> 
-        <br><source src="video/spa.mp4" type="video/mp4" style="height: 200%;">
+      <video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted" style="height: 300%;"> 
+        <br><source src="video/spa.mp4" type="video/mp4" >
         Video not supported
       </video>
     </div>
