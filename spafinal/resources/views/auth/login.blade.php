@@ -24,7 +24,7 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="{{ route('login') }}">LOGIN</a></li>
                     <li><a href="{{ route('register') }}">REGISTER</a></li>
-                </ul
+                </ul>
 
             </div>
         </div>
@@ -37,15 +37,11 @@
             <input type="text" name="" placeholder="Enter Username"style ="width: 245px; height: 40px;">
             <p>Password</p>
             <input type="password" name="" placeholder="Enter Password"style ="width: 245px; height: 40px;"><br>
-
-            <button class="button" style="vertical-align:middle; width: 245px"><span><a href="{{ url('/home') }}">Login</span></button><br>
-            <a href="#">Lost your password?</a><br>
-
+            <button class="button" style="vertical-align:middle; width: 245px"><span><a href="{{ url('/home') }}">Login</a></span></button>
             <a href="#">Don't have a account?</a>
-        
-            
         </form>
     </div>
+  
     <div style="padding-top: 600px;"></div>
      <div style="background-color: #edf0c7; height: 230px;">
     <div class="foooterz"> 
