@@ -19,10 +19,11 @@
                 <ul>
                     <li><img src="image/logo.png" style="width: 190px; height: 53px; padding-left: 40px; bottom: 10%;">
                     </li>
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href=>HOME</a></li>
                     <li><a href="#service">SERVICE</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#login">LOGIN</a></li>
+                    <li><a href="#register">REGISTER</a></li>
                 </ul>
 
             </div>
