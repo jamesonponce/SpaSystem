@@ -63,8 +63,8 @@
          
         <div> <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: #ff5c00; font-size: 25px; padding-top: 35px; padding-left: 85px;"> To promote your products in lykarewellnesscenter.com's site, please contact our sales group: </div>
             <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: black; font-size: 19px; padding-left: 85px;"> Phone: +63 (2) 369-2359 / 7895314
-Fax: +63 (2) 771-0143
-E-mail address: alabang@lykarewellnesscenter.com</div> 
+            Fax: +63 (2) 771-0143
+            E-mail address: alabang@lykarewellnesscenter.com</div> 
             </div>
         <div> <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: #ff5c00; font-size: 25px; padding-top: 35px; padding-left: 75px;"> For event sponsorships: </div>
             <div class="lalagyan" style="font-family: 'Fira Sans', sans-serif; color: black; font-size: 19px; padding-left: 75px;"> Please send proposals to alabang@lykarewellnesscenter.com</div>      
